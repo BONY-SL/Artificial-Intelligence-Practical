@@ -1,3 +1,12 @@
-for i in range(1,11):
-    for j in range(1,11):
-        print(i)
+rows = 3
+cols = 7
+
+for i in range(rows):
+    for j in range(cols):
+        if j == cols // 2 - i or j == cols // 2 + i:
+            print("*", end=" ")
+        else:
+            print(" ", end=" ")
+    print()
+
+print("* " + "- " * (cols - 2) + "*")
